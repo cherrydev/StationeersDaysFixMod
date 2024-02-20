@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{dd26a6a0-8074-4c27-8a04-dd6258509f11}") = "DaysFixMod", "DaysFixMod.csproj", "{f878df7a-c966-4aa3-8ab1-9423256c7b2d}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{f878df7a-c966-4aa3-8ab1-9423256c7b2d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f878df7a-c966-4aa3-8ab1-9423256c7b2d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f878df7a-c966-4aa3-8ab1-9423256c7b2d}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{f878df7a-c966-4aa3-8ab1-9423256c7b2d}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
