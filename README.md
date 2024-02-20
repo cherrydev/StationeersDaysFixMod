@@ -5,7 +5,7 @@ This mod restores the days counter and re-enables storms.
 ## Installation
 
 - First [install BepInEx](https://github.com/jixxed/StationeersMods) the same as how StationeersMod directs it. You do not need to install StationeersMod.
-- Unzip the release archive into the `BepInEx\plugins\` directory.
+- Unzip the [release archive](https://github.com/cherrydev/StationeersDaysFixMod/releases/latest) into the `BepInEx\plugins\` directory.
 
 ## Dedicated Server & Multiplayer
 
