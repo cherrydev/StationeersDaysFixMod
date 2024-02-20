@@ -5,7 +5,7 @@ using BepInEx;
 
 namespace DaysFixMod
 {
-    [BepInPlugin("FriendlyFrames", "Friendly Frames", "0.0.1.0")]
+    [BepInPlugin("DaysFix", "Friendly Frames", "0.0.1.0")]
     class DaysFixMod : BaseUnityPlugin
     {
         private void Awake()
