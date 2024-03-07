@@ -4,6 +4,7 @@ This mod restores the days counter and re-enables storms.
 
 ## Installation
 
+- If you're playing the beta version of Stationeers, make sure you use the latest beta branch version listed on the full [releases](https://github.com/cherrydev/StationeersDaysFixMod/releases) page.
 - First [install BepInEx](https://github.com/jixxed/StationeersMods) the same as how StationeersMod directs it. You do not need to install StationeersMod.
 - Unzip the [release archive](https://github.com/cherrydev/StationeersDaysFixMod/releases/latest) into the `BepInEx\plugins\` directory.
 
