@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Assets.Scripts.Util;
+using BepInEx.Configuration;
 using HarmonyLib;
 using JetBrains.Annotations;
 
@@ -32,7 +33,16 @@ namespace DaysFixMod
             {
                 var rawDays = (int) Math.Abs(Math.Floor((__instance as RotatingCelestialBody).AccumulatedAngle / 360.0));
                 int daysOffset;
-                ScenarioOffsets.TryGetValue(WorldSetting.Current.Name, out daysOffset);
+                var worldId = WorldSetting.Current.Id;
+                if (! ScenarioOffsets.TryGetValue(worldId, out daysOffset))
+                {
+                    UnityEngine.Debug.Log($"Loading day offset for world {worldId}");
+                    ConfigDefinition configDefinition = new ConfigDefinition("DayOffsets", worldId);
+                    var offsetConfig = DaysFixMod.Instance.Config.Bind<int>(configDefinition, 0 , new ConfigDescription($"Day offset for {worldId}"));
+                    daysOffset = offsetConfig.Value;
+                    ScenarioOffsets[worldId] = daysOffset;
+                    UnityEngine.Debug.Log($"Loaded offset of {daysOffset}");
+                }
                 __result =  (uint) (rawDays - daysOffset);
                 return false;
             }
