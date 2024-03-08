@@ -11,7 +11,8 @@ This mod restores the days counter and re-enables storms.
 ## Dedicated Server & Multiplayer
 
 This mod supports multiplayer and dedicated server. All clients and the server need to have it installed. Installation on a dedicated
-server is identical.
+server is identical. If you have a custom world or scenario all clients and server must have the same configuration
+file as well as detailed in the next section!
 
 ## Custom Worlds / Scenarios
 
